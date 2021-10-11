@@ -1,4 +1,26 @@
-import Head from 'next/head'
+import Head from "next/head";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  fab,
+  faFacebook,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faCheckCircle,
+  faAward,
+  faUniversity,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  fab,
+  faCheckCircle,
+  faAward,
+  faFacebook,
+  faLinkedin,
+  faGithub,
+  faUniversity
+);
 
 export default function Home() {
   return (
@@ -54,8 +76,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
@@ -205,5 +226,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
